@@ -88,7 +88,7 @@ end
 while true do
     local cd = veinFinder.getCooldown()
 
-    if cd > 0 then
+    if not cd then
         print("Cooldown: " .. cd)
         sleep(cd / 20)
     end
