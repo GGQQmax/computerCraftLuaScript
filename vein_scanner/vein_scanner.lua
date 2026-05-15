@@ -17,7 +17,7 @@ local function send(data)
     modem.transmit(SERVER_CHANNEL, REPLY_CHANNEL, data)
 end
 
-local modem = peripheral.find("modem")
+modem = peripheral.find("modem")
 
 if not modem then
     error("No modem attached")
